@@ -2,7 +2,7 @@
 FROM composer:2.4.4 AS composer
 
 # continue with the official PHP image
-FROM php:8.1.3-fpm-buster
+FROM php:8.2.0-fpm-buster
 
 # copy the Composer PHAR from the Composer image into the PHP image
 COPY --from=composer /usr/bin/composer /usr/bin/composer
