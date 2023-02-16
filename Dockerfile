@@ -1,5 +1,5 @@
 # start with the official Composer image and name it
-FROM composer:2.5.1 AS composer
+FROM composer:2.5.4 AS composer
 
 # continue with the official PHP image
 FROM php:8.2.2-fpm-buster
